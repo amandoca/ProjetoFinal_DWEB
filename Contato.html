@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mosaic Museu Paulista</title>
+    <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
+    <link rel="icon" href="Imagens/museu.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Museus_SP.html">Museus de São Paulo</a></li>
+            <li><a href="Comprar_Ingresso.html">Comprar Ingresso</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <br><br><br>
+    <div class="container superior">
+        <h1 class="destaque_titulo">Entre em contato conosco!</h1>
+        <div id="email" class="contato">
+            <br><br><br><br><br>
+            <form method="get">
+                <input type="text" id="nome" name="nome" maxlength="38" required placeholder="Nome completo" />
+                <input type="email" id="email_compra" name="email" maxlength="40" required placeholder="E-mail" />
+                <input type="tel" id="telefone" name="telefone" maxlength="13" required placeholder="Telefone ex: (00)00000-0000" />
+                <input type="text" id="texto" name="texto" maxlength="300" required placeholder="Escreva aqui o motivo do seu contato" />
+                <input type="submit" class="botao" value="Enviar" />
+            </form>
+        </div>
+        <footer>&copy; Copyright 2021 Desenvolvido por Amanda Souza</footer>
+</body>
+
+</html>

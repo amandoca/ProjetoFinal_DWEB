@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mosaic Museu Paulista</title>
+    <link rel="stylesheet" type="text/css" href="Estilo/CSS.css" />
+    <link rel="icon" href="Imagens/museu.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="Museus_SP.html">Museus de São Paulo</a></li>
+            <li><a href="Comprar_Ingresso.html">Comprar Ingresso</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br>
+    <main>
+        <h1 class="destaque_titulo">Comprar Ingresso</h1>
+        <div class="ingresso">
+            <div>
+                <select id="sel_exemplo_museu">
+						<option value="" selected disabled>Escolha o Museu</option>
+						<option value="MASP">MASP</option>
+						<option value="Pinacoteca">Pinacoteca</option>
+						<option value="da Imagem e do Som">Museu da Imagem e do Som</option>
+						<option value="do Futebol">Museu do Futebol</option>
+						<option value="Catavento">Museu Catavento</option>
+						<option value="AfroBrasil">Museu AfroBrasil</option>
+						<option value="da Arte Moderna">Museu da Arte Moderna</option>
+						<option value="da América Latina">Memorial da América Latina</option>
+						<option value="Casa das Rosas">Casa das Rosas</option>
+						<option value="Santander">Farol Santander</option>
+				</select>
+            </div>
+            <div>
+                <img src="Imagens/Museu_Exemplo.png" id="img_exemplo_museu" alt="Museu">
+                <p id="p_exemplo_museu">Museu</p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h1 class="destaque_categoria_ingresso">Escolha uma categoria de ingresso</h1>
+            <div class="ingresso_categoria">
+                <div>
+                    <br><br><br><br>
+                    <input type="radio" name="btn_ingresso" value="INTEIRA" />INTEIRA
+                    <input type="radio" name="btn_ingresso" value="ESTUDANTE" />ESTUDANTE
+                    <input type="radio" name="btn_ingresso" value="PROFESSOR" />PROFESSOR
+                </div>
+            </div>
+
+            <div>
+                <img src="Imagens/INGRESSO_ESCOLHER.jpg" alt="Categoria de Ingresso" id="img_ingresso" />
+            </div>
+        </div>
+        <div id="email" class="enviar_email">
+            <h1 class="destaque_compra">Nos informe seus dados e<br>data de visita para enviarmos o boleto da compra</h1>
+            <br><br><br><br><br>
+            <form method="get">
+                <input type="text" id="nome" name="nome" maxlength="38" required placeholder="Nome completo" />
+                <input type="number" id="CPF" name="CPF" maxlength="11" required placeholder="CPF ex.: 000.000.000-00">
+                <input type="email" id="email_compra" name="email" maxlength="40" required placeholder="E-mail" />
+                <input type="datetime-local" id="datahora" name="datahora" required placeholder="Escolha o dia e horário" />
+                <input type="submit" class="botao" value="Enviar" />
+            </form>
+        </div>
+    </main>
+    <footer>&copy; Copyright 2021 Desenvolvido por Amanda Souza</footer>
+    <script src="Scripts/jscript.js"></script>
+</body>
+
+</html>
